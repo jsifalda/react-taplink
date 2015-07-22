@@ -1,0 +1,38 @@
+{
+  "name": "react-taplink",
+  "version": "0.1.0",
+  "description": "Simple component which mock react-router link component to works on touch devices without 300ms delay",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./lib && ./node_modules/.bin/babel -e 0 ./src --out-dir ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsifalda/react-taplink.git"
+  },
+  "keywords": [
+    "react",
+    "taplink",
+    "react",
+    "router",
+    "tap",
+    "links",
+    "href",
+    "component"
+  ],
+  "author": "Jiri Sifalda <sifalda.jiri@gmail.com> (http://jsifalda.name/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsifalda/react-taplink/issues"
+  },
+  "homepage": "https://github.com/jsifalda/react-taplink#readme",
+  "devDependencies": {
+    "babel": "^5.8.3"
+  },
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "react-tappable": "^0.5.2"
+  }
+}
