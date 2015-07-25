@@ -57,7 +57,7 @@ TapLink.defaultProps = {
 }
 
 TapLink.contextTypes = {
-  router: React.PropTypes.func.isRequired
+  router: React.PropTypes.object.isRequired
 }
 
 export default TapLink
