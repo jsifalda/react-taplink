@@ -1,6 +1,6 @@
 {
   "name": "react-taplink",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple component which mock react-router link component to works on touch devices without 300ms delay",
   "main": "lib/index.js",
   "scripts": {
