@@ -10,7 +10,17 @@ let TapLink = (props, context) => {
     context,
 
     handleTap () {
-      this.context.router.transitionTo(this.props.to, this.props.params, this.props.query)
+
+      let { redirectType } = this.props
+      let { router } = this.context
+
+      if (redirectType === 'transition') {
+        router.transitionTo(this.props.to, this.props.params, this.props.query)
+      } else if (redirectType === 'replace') {
+        router.replaceWith(this.props.to, this.props.params, this.props.query)
+      } else {
+        throw new Error(`Unsupported redirect type "${ redirectType }" given`)
+      }
     },
 
     getClassName () {
@@ -47,13 +57,15 @@ TapLink.propTypes = {
   params: React.PropTypes.object,
   query: React.PropTypes.object,
   activeStyle: React.PropTypes.object,
-  component: React.PropTypes.string
+  component: React.PropTypes.string,
+  redirectType: React.PropTypes.string.isRequired
 }
 
 TapLink.defaultProps = {
   activeClassName: 'active',
   className: '',
-  component: 'a'
+  component: 'a',
+  redirectType: 'transition'
 }
 
 TapLink.contextTypes = {
