@@ -38,11 +38,8 @@ let TapLink = (props, context) => {
     },
 
     render () {
-
-      let { component } = this.props
-
       return (
-        <Tappable onTap={::this.handleTap} component={component} className={this.getClassName()}>
+        <Tappable {...this.props} onTap={::this.handleTap} className={this.getClassName()}>
           {this.props.children}
         </Tappable>
       )
