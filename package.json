@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "react": "^0.13.3",
+    "react-pure-render": "^1.0.2",
     "react-router": "^0.13.3",
     "react-tappable": "^0.5.2"
   },

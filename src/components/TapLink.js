@@ -1,11 +1,14 @@
 import Tappable from 'react-tappable'
 import React from 'react'
+import shouldComponentUpdate from 'react-pure-render/function'
 
 let TapLink = (props, context) => {
 
   return {
 
     ...React.Component.prototype,
+    shouldComponentUpdate,
+
     props,
     context,
 
