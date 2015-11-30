@@ -66,7 +66,7 @@ TapLink.defaultProps = {
   activeClassName: 'active',
   className: '',
   component: 'a',
-  redirectType: 'transition'
+  redirectType: 'transition',
   moveThreshold: 3
 }
 
