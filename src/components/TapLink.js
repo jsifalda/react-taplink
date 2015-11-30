@@ -58,7 +58,8 @@ TapLink.propTypes = {
   query: React.PropTypes.object,
   activeStyle: React.PropTypes.object,
   component: React.PropTypes.string,
-  redirectType: React.PropTypes.string.isRequired
+  redirectType: React.PropTypes.string.isRequired,
+  moveThreshold: React.PropTypes.number
 }
 
 TapLink.defaultProps = {
@@ -66,6 +67,7 @@ TapLink.defaultProps = {
   className: '',
   component: 'a',
   redirectType: 'transition'
+  moveThreshold: 3
 }
 
 TapLink.contextTypes = {
